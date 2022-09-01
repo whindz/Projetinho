@@ -72,12 +72,12 @@ div.nav {
     list-style-type: none;
     padding: 0;
     z-index: 1;
-    position: relative!important;
+    position: relative;
     
 }
 
-#sobrepor {
-    z-index: 2;
+div.sobrepor {
+    z-index: 3;
     position: relative!important;
 }
 .dp-menu ul {
