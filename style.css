@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
+@media screen and (max-width: 700px) {
+    .logo img {
+        
+    }
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -106,16 +112,21 @@ div.container {
     height: 100%;
 }
 
-.logo img{
+
+
+.cat img{
     display: inline-block;
-    height: 1.7vw;
-    padding: 10px;
+    height: 3vh;
+    padding: 5px;
     float: right;
     bottom: 60px;
     position: relative;
-    bottom: 40px;
-
+    bottom: 35px;
+    
+    
+    
 }
+
 
 
 main {
