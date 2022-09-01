@@ -64,13 +64,16 @@ div.nav {
     font-family: var(--font-menu);
     font-size: 1.2em;
     font-weight: bold;
-    position: relative;
+    
 
 }
 
 .dp-menu {
     list-style-type: none;
     padding: 0;
+    z-index: 10;
+    position: relative!important;
+    
 }
 .dp-menu ul {
     background-color: transparent;
