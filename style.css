@@ -90,15 +90,18 @@ div.nav {
 .dp-menu ul li a:hover {
     background-color: var(--cor0);
     transition-duration: .3s;  
+    opacity: 1;
 }
 .dp-menu ul ul{
     display: none;
     left: 0;
     position: absolute;
     background-color: #C7B7A1;
+    opacity: 1;
 }
 .dp-menu ul li:hover ul{
     display: block;
+
     
 }
 .dp-menu ul ul{
