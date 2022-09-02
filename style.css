@@ -4,16 +4,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
 
-@media screen and (max-height: 600px) {
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+@media screen and (max-width: 600px) {
     .logo img {
         display: block;
     }
+    .card1 > p, .card2 > p, .card3 > p {
+        display: none;
+    }
+
 }
 
 * {
     margin: 0px;
     padding: 0px;
 }
+
 
 :root {
 
@@ -26,7 +33,7 @@
     --fonte-destaque: 'Dancing Script', cursive;
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --font-menu: 'Source Sans Pro', sans-serif;
-
+    --font-aside: 'Handlee', cursive;
 }
 
 
@@ -73,6 +80,7 @@ div.nav {
     padding: 0;
     z-index: 1;
     position: relative;
+    display: inline-block;
     
 }
 
@@ -125,7 +133,7 @@ div.container {
 
 
 
-.cat img{
+.logo img{
     display: inline-block;
     height: 3vh;
     padding: 5px;
@@ -158,6 +166,7 @@ main h1 {
     padding-left: 10px;
     padding-bottom: -5px;
     color: black;
+    font-size: 2em;
     
     
 }
@@ -173,7 +182,7 @@ section a {
     text-decoration: none;
     font-weight: bold;
     color: black;
-    background-color: var(--cor0);
+    background-color: #bf9e8077;
 }
 
 
@@ -207,6 +216,106 @@ div#next a {
 }
 div#next a:hover {
     text-decoration: underline;
+}
+
+aside {
+    display: flex;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 50px;
+    background-color: #59392D;
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
+    color: white;
+}
+
+div.aside-txt > h1 {
+    font-family: var(--font-aside);
+    padding-bottom: 10px;
+    font-size: 1.9em;
+}
+
+div.aside-txt > p {
+    font-family: var(--font-aside);
+    font-size: 1.3em;
+} 
+
+div.aside-img {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.aside-img img {
+    display: flex;
+    height: 7vh;
+    padding: 5px;
+    bottom: 60px;
+    position: relative;
+    bottom: 0px;
+}
+
+
+.card1 {
+    display: flex;
+    background-image: linear-gradient(to right, #bf9e8077, rgba(255, 255, 255, 0));
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+
+    
+
+}
+.card1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.card2 {
+    display: flex;
+    background-image: linear-gradient(to right, #bf9e8077, rgba(255, 255, 255, 0));
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    
+}
+
+.card2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.card3 {
+    display: flex;
+    background-image: linear-gradient(to right, #bf9e8077, rgba(255, 255, 255, 0));
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+}
+
+.card3 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.card1, .card2, .card3 > p {
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    padding-right: 70px;
+
 }
 
 footer {
