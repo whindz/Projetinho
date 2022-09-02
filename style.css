@@ -19,8 +19,16 @@
 
     #p2 {
         display: flex;
+    
     }
 
+    div.aside-img {
+        padding-left: 100px;
+    
+    }
+    div.aside-txt > h1 {
+        width: 40vw;
+    }
 
 
 }
@@ -263,7 +271,7 @@ div.aside-txt > p {
 
 #p2 {
     font-family: var(--font-aside);
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 div.aside-img {
