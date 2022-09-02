@@ -6,14 +6,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .logo img {
         display: block;
     }
     .card1 > p, .card2 > p, .card3 > p {
         display: none;
     }
+    div.aside-txt > p {
+        display: none;
+    } 
 
+    #p2 {
+        display: flex;
+    }
+
+
+
+}
+
+@media screen and (min-width:700px) {
+    div.aside-txt > p {
+        display: flex;
+    } 
+
+    #p2 {
+        display: none;
+    }
 }
 
 * {
@@ -188,7 +207,7 @@ section a {
 
 main a:hover {
     text-decoration: underline;
-    color: var(--cor4);
+    color: #ff050583;
 }
 main img {
     width: 50%;
@@ -241,6 +260,11 @@ div.aside-txt > p {
     font-family: var(--font-aside);
     font-size: 1.3em;
 } 
+
+#p2 {
+    font-family: var(--font-aside);
+    font-size: 1.3em;
+}
 
 div.aside-img {
     width: 70%;
@@ -316,6 +340,11 @@ div.aside-img img {
     font-size: 2.5em;
     padding-right: 70px;
 
+}
+
+.card1 a:hover, .card2 a:hover, .card3 a:hover {
+    text-decoration: none;
+    color: #ff050583;
 }
 
 footer {
