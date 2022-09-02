@@ -251,14 +251,14 @@ aside {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    padding: 50px;
+    padding: 20px;
     background-color: #59392D;
     border-radius: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
     color: white;
 }
 div.aside-txt {
-    margin-left: -40px;
+    margin-left: -10px;
 }
 
 div.aside-txt > h1 {
