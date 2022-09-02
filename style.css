@@ -257,6 +257,9 @@ aside {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
     color: white;
 }
+div.aside-txt {
+    margin-left: -40px;
+}
 
 div.aside-txt > h1 {
     font-family: var(--font-aside);
