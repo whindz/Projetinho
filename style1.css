@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+@media screen and (max-width: 700px) {
+    .logo img {
+        display: block;
+    }
+    .card1 > p, .card2 > p, .card3 > p {
+        display: none;
+    }
+    div.aside-txt > p {
+        display: none;
+    } 
+
+    #p2 {
+        display: flex;
+    
+    }
+
+    div.aside-img {
+        
+    
+    }
+    div.aside-txt > h1 {
+        width: 40vw;
+    }
+
+
+}
+
+@media screen and (min-width:700px) {
+    div.aside-txt > p {
+        display: flex;
+    } 
+
+    #p2 {
+        display: none;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+:root {
+
+    --cor0: #BF9E80;
+    --cor1: #59392D;
+    --cor2: #8C5E35;
+    --cor3: #733729;
+
+    
+    --fonte-destaque: 'Dancing Script', cursive;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-menu: 'Source Sans Pro', sans-serif;
+    --font-aside: 'Handlee', cursive;
+
+}
+
+
+
+body {
+    background-image: url(imagenspag1/fundo.jpg);
+    
+    font-family: var(--fonte-padrao);
+
+
+
+
+}
+
+header { 
+    min-height: 100px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+header img {
+    width: 7%;
+    min-width: 110px;
+}
+
+header > h1 , img {
+    display: inline-block;
+}
+header > h1 {
+    color: black;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.048)
+}
+div.nav {
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
+    font-family: var(--font-menu);
+    font-size: 1.2em;
+    font-weight: bold;
+    
+
+}
+
+.dp-menu {
+    list-style-type: none;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    
+}
+
+/*div.sobrepor {
+    z-index: 3;
+    position: relative!important;
+} */
+.dp-menu ul {
+    background-color: transparent;
+}
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+
+}
+.dp-menu ul li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: .3s;   
+}
+.dp-menu ul li a:hover {
+    background-color: var(--cor0);
+    transition-duration: .3s;  
+    opacity: 1;
+}
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    background-color: #C7B7A1;
+    opacity: 1;
+}
+.dp-menu ul li:hover ul{
+    display: block;
+
+    
+}
+.dp-menu ul ul{
+    width: 150px;
+}
+.dp-menu ul ul li a {
+    display: block;
+}
+
+div.container {
+    height: 100%;
+}
+
+
+
+.logo img{
+    display: inline-block;
+    height: 3vh;
+    padding: 5px;
+    float: right;
+    bottom: 60px;
+    position: relative;
+    bottom: 35px;
+    
+    
+    
+}
+
+.promotion-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+
+.promotion-header--title {
+    font-weight: bold;
+    padding-left: 100px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #59392D;
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
+    color: white;
+}
+
+main a {
+    text-decoration: none;
+    color: white;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0px 50px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+   
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    -moz-transition: all 0.5;
+    -webkit-transition: all 0.5;
+    transition: all 0.5;
+    cursor: pointer;
+    
+   
+
+}
+
+.product:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 10px;
+    
+}
+
+.product span {
+    font-weight: bold;
+}
+
+.price {
+    color: green;
+}
+
+
+
+aside {
+    display: flex;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #59392D;
+    border-radius: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.336);
+    color: white;
+}
+div.aside-txt {
+    margin-left: -10px;
+}
+
+div.aside-txt > h1 {
+    font-family: var(--font-aside);
+    padding-bottom: 10px;
+    font-size: 1.9em;
+}
+
+div.aside-txt > p {
+    font-family: var(--font-aside);
+    font-size: 1.3em;
+} 
+
+#p2 {
+    font-family: var(--font-aside);
+    font-size: 1em;
+}
+
+div.aside-img {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.aside-img img {
+    display: flex;
+    height: 7vh;
+    padding: 5px;
+    bottom: 60px;
+    position: relative;
+    bottom: 0px;
+}
+
+
+.card1 {
+    display: flex;
+    background-image: linear-gradient(to right, #bf9e8077, rgba(255, 255, 255, 0));
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+
+    
+
+}
+.card1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.card2 {
+    display: flex;
+    background-image: linear-gradient(to right, #bf9e8077, rgba(255, 255, 255, 0));
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    
+}
+
+.card2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.card3 {
+    display: flex;
+    background-image: linear-gradient(to right, #bf9e8077, rgba(255, 255, 255, 0));
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+}
+
+.card3 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.card1, .card2, .card3 > p {
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    padding-right: 70px;
+
+}
+
+.card1 a:hover, .card2 a:hover, .card3 a:hover {
+    text-decoration: none;
+    color: #ff050583;
+}
+
+footer {
+    background-color: var(--cor1);
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor0);
+}
+

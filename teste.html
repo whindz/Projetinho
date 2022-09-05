@@ -1,59 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .dp-menu {
-    list-style-type: none;
-    padding: 0;
-}
-
-.dp-menu ul {
-    background-color: black;
-}
-
-.dp-menu ul li {
-    display: inline-block;
-}
-
-.dp-menu ul li a {
-    color: white;
-}
-.dp-menu ul li a:hover {
-
-    background-color: brown;
-    
-}
-
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Criar um modal sem JS</title>
+    <link rel="stylesheet" href="styletest.css">
 </head>
+
 <body>
-    <ul class="dp-menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Produtos</a><ul>
-            <li><a href="#">Produtos para seu cabelo</a></li>
-            <li><a href="#">Produtos para sua pele</a></li>
-            <li><a href="#">Cílios</a></li>
-        </ul>
-        </li>
-            
-        <li><a href="#">Parceiros</a>
-            <ul>
-                <li><a href="#">Kung webdeveloper</a></li>
-                <li><a href="#">Nat cilios</a></li>
-            </ul>
-        </li>
-            
-        <li><a href="#">Nossas unidades</a>
-            <ul>
-                <li><a href="#">Gama</a></li>
-                <li><a href="#">Samambaia</a></li>
-            </ul>
-        </li>
-            
-    </ul>
+    <a href="#modal_1" class="btn">Fibra</a>
+    <div id="modal_1" class="modal">
+        <div class="modal__content">
+            <h2 class="modal__title">Meu primeiro modal</h2>
+            <p class="modal__description">
+                A lace é uma prótese feita fio a fio em uma tela de microtule. Neste caso, os fios são colocados um a um sobre o tecido, o que permite um efeito mais semelhante ao couro cabeludo.
+            </p>
+            <a href="#" class="modal__link">OK</a>
+        </div>
+    </div>
+    <div id="modal_2" class="modal modal--2">
+        <div class="modal__content">
+            <h2 class="modal__title">Meu primeiro modal</h2>
+            <p class="modal__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id error accusamus pariatur quasi
+                est amet maiores tempore, eum beatae expedita fugiat modi, ipsum commodi laborum voluptatem, assumenda
+                et quod?
+            </p>
+            <a href="#" class="modal__link">OK</a>
+        </div>
+    </div>
 </body>
+
 </html>
